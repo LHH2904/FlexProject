@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        align-items: center;
+        height: 400px;
+        width: 1000px;
+        background-color: #5A2479;
+    }
+
+    .flex-container>div {
+        background-color: #E9D7F6;
+        padding: 20px 30px;
+        width: 100px;
+    }
+</style>
+
+<body>
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    <div class="flex-container">
+        <div style="align-self: flex-start;padding-top: 40px;">1</div>
+        <div>2</div>
+        <div style="align-self: stretch">3</div>
+        <div>4</div>
+        <div style="align-self: flex-end">5</div>
+    </div>
+</body>
+
+</html>

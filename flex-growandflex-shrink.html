@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #58257b;
+        }
+
+        .flex-container>div {
+            background-color: #e9d8f4;
+            color: #58257b;
+            margin: 5px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .wrapper {
+            width: 600px;
+            height: 200px;
+            display: flex;
+            background-color: #4682B4;
+        }
+
+        .item-1 {
+            flex-basis: 100px;
+            flex-shrink: 1;
+            background-color: #87CEEB;
+            border: 1px solid #58257b;
+        }
+
+        .item-2 {
+            flex-basis: 400px;
+            flex-shrink: 6;
+            background-color: #87CEEB;
+            border: 1px solid #58257b;
+        }
+
+        .item-3 {
+            flex-basis: 400px;
+            flex-shrink: 1;
+            background-color: #87CEEB;
+            border: 1px solid #58257b;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p style="text-align: center; color: red; font-size: large;">flex-grow cho phép các phần tử giãn theo độ rộng của
+        container
+        Flex-grow sẽ được sử dụng khi tổng kích thước các item trong container nhỏ hơn kích thước của container
+        và
+        bạn muốn nội dung trong container của mình luôn được lấp đầy.</p>
+    <h4 style="text-align: center;">#all-item: flex-grow:1|#item3: flex-grow:3</h4>
+    <div class="flex-container">
+        <div style="flex-grow: 0">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 3">3</div>
+        <div style="flex-grow: 1">4</div>
+    </div>
+    <p style="text-align: center; color: red; font-size: large;">flex-shrink làm các phần tử co lại, không giãn ra khi
+        chúng ta thay đổi độ rộng của container.
+        Ngược lại so với flex-grow thì flex-shrink sẽ được sử dụng khi tổng kích thước các item trong container lớn hơn
+        kích thước của container và bạn muốn co kích thước của item lại theo tỉ lệ mong muốn.</p>
+    <h4 style="text-align: center;">#all-item: flex-shrink:1|#item3: flex-shrink:3</h4>
+    <div class="wrapper">
+        <div class="item-1">item1</div>
+        <div class="item-2">item2</div>
+
+        <div class="item-3">item5</div>
+    </div>
+    Cấu trúc ngắn gọn
+    flex: flex-grow flex-shrink flex-basis;
+</body>
+
+</html>

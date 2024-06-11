@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #group {
+        display: flex;
+        justify-content: center;
+    }
+
+    #group div {
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #group #blockA {
+        background-color: red;
+        order: 3;
+    }
+
+    #group #blockB {
+        background-color: green;
+        order: 1;
+    }
+
+    #group #blockC {
+        background-color: yellow;
+        order: 4;
+    }
+
+    #group #blockD {
+        background-color: pink;
+        order: 2;
+    }
+</style>
+
+<body>
+    <p style="text-align: center;">Thuộc tính order trong flexbox thay đổi vị trí các phần tử</p>
+    <div id="group">
+        <div id="blockA">A</div>
+        <div id="blockB">B</div>
+        <div id="blockC">C</div>
+        <div id="blockD">D</div>
+    </div>
+</body>
+
+</html>
